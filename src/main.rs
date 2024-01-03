@@ -10,7 +10,7 @@ fn main() {
 unsafe {
 let start = Instant::now();
 
-//КАСТЫЛЬНЫЙ ВВОД
+//Ввод количества векторов
 let mut length: String = String::new();
 println!("Enter the length vectors: {length}");
 
@@ -19,7 +19,6 @@ io::stdin()
 .expect("Failed to read line");
 
 
-    // Попытайтесь преобразовать строку в i64
 let parsed_length: i64 = match length.trim().parse() {
     Ok(num) => num,
     Err(_) => {
